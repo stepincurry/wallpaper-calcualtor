@@ -1,0 +1,65 @@
+
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+
+{
+
+float w;
+float l;
+float h;
+float dw;
+float dh;
+float m;
+float n;
+
+
+cout<<"enter width of room (meters)"<<endl;
+cin>> w;
+
+cout<<"enter length of room (meters)"<<endl;
+cin>>l;
+
+cout<<"enter height of room (meters)"<<endl;
+cin>>h;
+
+cout<<"enter width of door   (meters)"<<endl;
+cin>>dw;
+
+cout<<"enter width of door (meters)"<<endl;
+cin>>dh;
+
+cout<<"enter width of wallpaper (meters)"<<endl;
+cin>>m;
+
+cout<<"enter height of wallpaper"<<endl;
+cin>> n;
+
+if  ((w<=0) or (l<=0) or (h<=0) or (dw<=0) or (dh<=0) or (m<=0) or (n<=0)){
+    cout<<"All measurements must be positive"<<endl;
+}
+
+
+
+
+
+
+else cout<< ceil((((2*w*h)+(2*w*l)-(dw*dh))/(m*n)))<< " is the number of wallpaper rolls you need"<<endl;
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
